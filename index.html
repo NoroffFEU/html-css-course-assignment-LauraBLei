@@ -1,15 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Title, replace me!</title>
-  <link rel="stylesheet" href="src/css/styles.css">
-</head>
-<body class="centered">
-  <div>
-    <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-    <h1>Hello World!</h1>
-  </div>
-</body>
+  <head>
+    <title>GameHub</title>
+    <meta
+      name="description"
+      content="Buy and sell your used online games here!"
+    />
+    <meta name="Viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/Pictures/Favicon.png" type="image/png" />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/1102aaadb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=League+Spartan"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="section1">
+        <nav class="menu-box-container">
+          <nav class="menu-box">
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Games.html">Games</a></li>
+                <li class="navaboutus"><a href="/Aboutus.html">About us</a></li>
+                <li class="navcontactus"><a href="/Contactus.html">Contact Us</a></li>
+                <li>
+                    <input type="checkbox" id="showSearch">
+                    <input type="search">
+                    <label class="search-button" for="showSearch"
+                ><i class="fa-solid fa-magnifying-glass fa-1x"></i
+              ></label>
+                </li>
+            </ul>
+        </nav>
+          <div class="right-navbar">
+            <a class="cart" href="/Gamhub-2/Cart.html"
+              ><i class="fa-solid fa-cart-shopping fa-4x"></i
+            ></a>
+            <a class="profile" href=""
+              ><i class="fa-regular fa-user fa-4x"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="Pictures/GameHub_Logo_new.png"
+            alt=" Gamehub Logo"
+          />
+        </div>
+      </div>
+      <div class="jointext">
+        <article>
+          <p class="joinp">
+            Looking for a new game? <br />
+            Or did you finsish playing one, and wanna sell?
+          </p>
+          <p class="joinp">
+            Buy games at attractive prices and sell <br />
+            the ones you are done playing.
+          </p>
+          <button class="get-the-app">Get the app</button>
+        </article>
+      </div>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <div class="section-game-container">
+        <div class="game-container">
+          <div class="headline">
+            <div>
+              <h2 class=gameboxtitel>Top Trending games</h2 class=gameboxtitel>
+            </div>
+            <div>
+              <button class="view-all">View all</button>
+            </div>
+          </div>
+
+          <div class="gamelist">
+            <div class="item">
+              <div>
+                <a href="/Gamhub-2/Gamepage.html">
+                  <img
+                    class="picture"
+                    src="Pictures/Boxercropped.jpg"
+                    alt="Picture of the game Boxer"
+                  />
+                </a>
+              </div>
+              <div class="pic-information">
+                <div class="text">Boxer</div>
+                <div>155 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/PingPongcropped.jpg"
+                  alt="Picture of the game Ping Pong"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Ping Pong</div>
+                <div>100 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/SuperDupercropped.jpg"
+                  alt="Picture of the game Super Duper"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Super Duper</div>
+                <div>355 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/SpaceWarcropped.jpg"
+                  alt="Picture of the game Space War"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Space War</div>
+                <div>200 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/Racingcropped.jpg"
+                  alt="Picture of the game Racing"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Racing</div>
+                <div>162 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/Cyberpunkcropped.jpg"
+                  alt="Picture of the game Cyberpunk"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Cyberpunk</div>
+                <div>250 NOK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="content">
+          <div class="feature-fast">
+            <div class="icon">
+              <i
+                class="fa-solid fa-cloud-arrow-down fa-5x"
+                style="color: #000"
+              ></i>
+            </div>
+            <div class="text">
+              <div class="maintext">Fast Download</div>
+              <div class="subtext">Instant digital download</div>
+            </div>
+          </div>
+
+          <div class="feature-safe">
+            <div class="icon">
+              <i
+                class="fa-solid fa-shield-cat fa-5x"
+                style="color: #000000"
+              ></i>
+            </div>
+            <div class="text">
+              <div class="maintext">Official and safe</div>
+              <div class="subtext">100% official games</div>
+            </div>
+          </div>
+
+          <div class="feature-trustpilot">
+            <div class="icon">
+              <ul class="starslist">
+                <li>
+                  <i class="fa-solid fa-star fa-2xl" style="color: #000000"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star fa-2xl" style="color: #000000"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star fa-2xl" style="color: #000000"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star fa-2xl" style="color: #000000"></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-star fa-2xl" style="color: #000000"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <div class="subtext">
+                Rated 4.8 out of 5 based on 100.000 reviews
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-game-container">
+        <div class="newgames-section">
+          <div class="headline">
+            <h2 class=gameboxtitel>New games</h2 class=gameboxtitel>
+            <button class="view-all">View all</button>
+          </div>
+
+          <div class="gamelist">
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/Cyberpunk.jpg"
+                  alt="Picture of the game Cyberpunk"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Cyberpunk</div>
+                <div>250 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/Furious.jpg"
+                  alt="Picture of the game Furious"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Furious</div>
+                <div>262 NOK</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <img
+                  class="picture"
+                  src="Pictures/ForgeLegend.jpg"
+                  alt="Picture of the game Forge Legend"
+                />
+              </div>
+              <div class="pic-information">
+                <div class="text">Forge Legend</div>
+                <div>350 NOK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="feature-follow">
+          <div class="icon">
+            <i class="fa-brands fa-facebook fa-5x" style="color: #000000"></i>
+            <i class="fa-brands fa-instagram fa-5x" style="color: #000000"></i>
+          </div>
+          <div> <a class="footer-maintext" href="">Follow us</a></div>
+        </div>
+
+        <div class="feature-aboutus">
+          <div><a class="footer-maintext" href="/Gamhub-2/Aboutus.html">About us</a></div>
+        </div>
+
+        <div class="feature-contactus">
+          <div class="icon">
+            <i class="fa-solid fa-comment fa-5x" style="color: #000000"></i>
+          </div>
+          <div><a class="footer-maintext" href="/Gamhub-2/Contactus.html">Contact us</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

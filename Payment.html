@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <title>Pay</title>
+            <meta
+              name="description"
+              content="Pay for your product here"
+            />
+            <meta name="Viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" href="/Pictures/Favicon.png" type="image/png" />
+            <link href="./styles.css" rel="stylesheet" />
+            <script
+              src="https://kit.fontawesome.com/1102aaadb8.js"
+              crossorigin="anonymous"
+            ></script>
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=League+Spartan"
+            />
+          </head>
+    </head>
+
+    <body>
+        <header>
+            <header>
+                <div class="headersection">
+                  <nav class="menu-box-container">
+                    <nav class="menu-box">
+                      <ul class="menu">
+                          <li><a href="/index.html">Home</a></li>
+                          <li><a href="/Games.html">Games</a></li>
+                          <li class="navaboutus"><a href="/Aboutus.html">About us</a></li>
+                          <li class="navcontactus"><a href="/Contactus.html">Contact Us</a></li>
+                          <li>
+                              <input type="checkbox" id="showSearch">
+                              <input type="search">
+                              <label class="search-button" for="showSearch"
+                          ><i class="fa-solid fa-magnifying-glass fa-1x"></i
+                        ></label>
+                          </li>
+                      </ul>
+                  </nav>
+                    <div class="right-navbar">
+                      <a class="cart" href="/Gamhub-2/Cart.html"
+                        ><i class="fa-solid fa-cart-shopping fa-4x"></i
+                      ></a>
+                      <a class="profile" href=""
+                        ><i class="fa-regular fa-user fa-4x"></i
+                      ></a>
+                    </div>
+                  </nav>
+                  <div class="logo-container">
+                    <img
+                      class="logo"
+                      src="Pictures/GameHub_Logo_new.png"
+                      alt=" Gamehub Logo"
+                    />
+                  </div>
+                </div>
+              </header>
+        </header>
+
+        <main>
+          <h1>Payment</h1>
+          <div class="container">
+              <div class="payment-info">
+                  <div class="container2">
+                      <div class="paymentoptions-container">
+                          <div class="paymentoptions">
+                              <div class="card">
+                                  <i class="fa-solid fa-credit-card fa-3x" style="color: #FBBD1F;"></i>
+                              </div>
+          
+                              <div class="paypal">
+                                  <i class="fa-brands fa-paypal fa-3x" style="color: #ffffff;"></i>
+                              </div>
+          
+                          </div>
+                      </div>
+                      <div class="info-section">
+  
+  
+                          <form class="payforms">
+                              <input  type="size2" id="email" name="email" required placeholder="Email">
+                          </form>
+  
+  
+                          <div class="cardinformation">
+                              <form class="payforms">
+                                  <input  type="size2" id="cardNumber" name="cardNumber" required placeholder="Card number">
+                              </form>
+  
+  
+                              <div class="month-year-cvv">
+                                  <form class="payforms">
+                                      <input  type="size1" id="expirationMonth" name="expirationMonth" required placeholder="Month">
+                                      <input  type="size1" id="expirationYear" name="expirationYear" required placeholder="Year">
+                                      <input  type="size1" id="cvv" name="cvv" required placeholder="CVV">
+                                  </form>
+                              </div>
+                              <form class="payforms">
+                                <input  type="size2" id="nameOnCard" name="nameOnCard" required placeholder="Name on card">
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="summary-container">
+                    <p class="summary-headline">Summary</p>
+                      <div class="summary">
+                          <div class="priceinfo">
+                              <h3> Official price</h3>
+                              <h3> 155 NOK </h3>
+                          </div>
+  
+                          <div class="priceinfo">
+                              <h3> Discount </h3>
+                              <h3> 0 NOK    </h3>
+                          </div>
+  
+                          <div class="priceinfo">
+                              <h3> Subtotal  </h3>
+                              <h3> 155 NOK   </h3>
+                          </div>
+                          <form action="/Gamhub-2/Paymentsuccess.html">
+                              <input class="buybutton" type="submit" value="Buy" >
+                          </form>
+  
+                      </div>
+                  </div>
+              </div>
+  
+  
+          </div>
+  
+      </main>
+
+        <footer>
+            <div class="footer-container">
+              <div class="feature-follow">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook fa-5x" style="color: #000000"></i>
+                  <i class="fa-brands fa-instagram fa-5x" style="color: #000000"></i>
+                </div>
+                <div> <a class="footer-maintext" href="">Follow us</a></div>
+              </div>
+      
+              <div class="feature-aboutus">
+                <div><a class="footer-maintext" href="/Gamhub-2/Aboutus.html">About us</a></div>
+              </div>
+      
+              <div class="feature-contactus">
+                <div class="icon">
+                  <i class="fa-solid fa-comment fa-5x" style="color: #000000"></i>
+                </div>
+                <div><a class="footer-maintext" href="/Gamhub-2/Contactus.html">Contact us</a></div>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>

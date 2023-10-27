@@ -1,0 +1,81 @@
+.headline {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  
+}
+
+.view-all {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  width: 109;
+  height: 31;
+  background-color: var(--faded-white20);
+  border-radius: 10px;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.game-container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: center;
+}
+
+.gamelist {
+  margin: 0px 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  border: 0;
+}
+
+.picture {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pic-information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: var(--white);
+  font-size: 25px;
+}
+
+.section-game-container {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+}
+
+.newgames-section{
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 872px){
+  .picture{
+    width: 100%;
+    height: auto;
+  }
+  .item{
+    
+    max-width: 350px;
+    padding-bottom: 10px;
+  }
+  .pic-information{
+    font-size: 15px;
+  }
+  .maintext{
+    font-size: 25px;
+  }
+
+  .gameboxtitle{
+    font-size: 20px;
+  }
+}
