@@ -1,0 +1,885 @@
+@import url(/src/css/_default.css);
+@import url(/src/css/_footer.css);
+@import url(/src/css/_header.css);
+@import url(/src/css/_gameplacement.css);
+@import url(/src/css/_informationsection.css);
+@import url(/src/css/_hover.css);
+@import url(/src/css/_media.css);
+
+/* -------------Home Page----------------- */
+
+.section1 {
+  background: url("pictures/challenger-stands-front-spooky-castle-illustration.jpg")
+    no-repeat center center fixed;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.jointext {
+  z-index: 2;
+  color: var(--white);
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  font-weight: normal;
+}
+
+.get-the-app {
+  font-family: "League Spartan", sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  width: 269px;
+  height: 41px;
+  background-color: var(--yellow);
+  color: var(--black);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* -------------Games Page----------------- */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+}
+
+.category-box {
+  display: flex;
+  justify-content: center;
+  max-width: 1330px;
+  gap: 35px;
+}
+
+.category {
+  padding: 0;
+  margin: 2% 0 0;
+  border-radius: 10px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 35px;
+}
+
+.categorysummary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--faded-white);
+  cursor: pointer;
+  height: 80px;
+  width: 402px;
+  z-index: 3;
+  list-style: none;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 10px;
+  margin: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.list-container {
+  background-color: var(--grey);
+  position: absolute;
+  z-index: 2;
+  box-shadow: var(--black);
+  border-radius: 10px;
+  width: 402px;
+  margin-top: 10px;
+}
+.gamessum-li {
+  list-style: none;
+  cursor: pointer;
+  list-style: none;
+}
+
+.gamessum-ul {
+  padding: 0 5;
+  text-align: center;
+}
+
+@media screen and (max-width: 1324px) {
+  .categorysummary {
+    height: 50px;
+    width: 200px;
+  }
+
+  .list-container {
+    font-size: 20px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .categorysummary {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+  }
+
+  .list-container {
+    font-size: 15px;
+    width: 100px;
+  }
+}
+
+/* -------------About us Page----------------- */
+.aboutus {
+  position: relative; /* Add this to establish a positioning context */
+  background: url("/Pictures/jason-goodman-bzqU01v-G54-unsplash.jpg") no-repeat
+    center center fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.aboutus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0; /* Change z-index to 0 to place it below the content */
+}
+
+.headertext {
+  z-index: 2;
+  color: var(--white);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1324px) {
+  .headertext {
+    z-index: 2;
+    color: var(--white);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .headertext {
+    z-index: 2;
+    color: var(--white);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+  }
+}
+
+/* -------------Contact us Page----------------- */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contactus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0%;
+}
+
+.info {
+  width: 800px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--faded-white);
+  border-radius: 10px;
+  font-size: 35px;
+}
+
+.summary-text {
+  background-color: var(--faded-white);
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 2%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.question {
+  list-style: none;
+  color: var(--black);
+  width: 100%;
+  margin: 10% 10% 10% 0;
+  border-bottom: 1px solid var(--white);
+  padding: 0 0 10% 0;
+}
+
+.q-link {
+  color: var(--black);
+  margin-bottom: 5%;
+}
+
+.ulinfo {
+  margin: 0;
+  padding: 0;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 0;
+}
+
+input[type="contacttype"] {
+  width: 540px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  font-size: 25px;
+}
+
+textarea {
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.send {
+  width: 260px;
+  height: 60px;
+  font-size: 30px;
+  margin: 0 25%;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  font-weight: bold;
+}
+
+.send:hover {
+  color: var(--black);
+  background-color: var(--faded-white);
+  border-color: var(--yellow);
+}
+.summary-form {
+  background-color: var(--faded-white);
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 2%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+}
+.contact-details {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1324px) {
+  .summary-form {
+    font-size: 25px;
+  }
+  .send {
+    width: 140px;
+    font-size: 25px;
+  }
+  .info {
+    width: 400px;
+    height: 80px;
+    font-size: 35px;
+  }
+  .summary-text {
+    font-size: 20px;
+  }
+  .ulinfo {
+    padding: 0 5%;
+  }
+
+  input[type="contacttype"] {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .summary-form {
+    font-size: 20px;
+  }
+  .send {
+    width: 100px;
+    font-size: 20px;
+  }
+  .info {
+    width: 300px;
+    height: 70px;
+    font-size: 25px;
+  }
+  .summary-text {
+    font-size: 20px;
+  }
+  .ulinfo {
+    padding: 0 5%;
+    width: 300px;
+  }
+
+  input[type="contacttype"] {
+    width: 180px;
+    height: 25px;
+  }
+}
+
+/* -------------Boxer game Page----------------- */
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  margin: 2%;
+}
+
+.information-container {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 685;
+  display: flex;
+  justify-content: center;
+}
+
+.informationbutton {
+  width: 683px;
+  height: 105;
+  font-size: 45px;
+  border-radius: 10px;
+  border-color: var(--yellow);
+  background-color: var(--faded-white);
+  margin: 1%;
+  cursor: pointer;
+}
+
+.informationbutton:hover {
+  background-color: var(--faded-white20);
+}
+
+.cartbutton {
+  width: 261px;
+  height: 105;
+  border-radius: 10px;
+  border-color: var(--yellow);
+  background-color: var(--yellow);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.buy-button {
+  width: 401px;
+  height: 105px;
+  font-size: 60px;
+  border-radius: 10px;
+  border-color: var(--yellow);
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+.cart-buy {
+  width: 685;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+}
+
+.buy-button:hover {
+  background-color: var(--faded-white);
+}
+.cartbutton:hover {
+  background-color: var(--faded-white);
+}
+
+.boxer-container img {
+  border-radius: 20px;
+}
+
+.price {
+  font-size: 50px;
+  width: 683;
+  text-align: right;
+  color: var(--white);
+}
+
+/* This is the responsive coding section  */
+
+
+@media screen and (max-width: 872px) {
+  .boxer-container img {
+    width: 100%;
+    height: auto;
+  }
+  .informationbutton {
+    width: 400px;
+    height: 50;
+    font-size: 20px;
+  }
+  .buy-button {
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .cart-buy {
+    width: 400px;
+    justify-content: center;
+  }
+  .cartbutton {
+    width: 100px;
+    height: 60;
+    font-size: 8;
+  }
+  .productinformations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .price {
+    font-size: 30px;
+    width: 50%;
+    padding: 2% 0;
+  }
+}
+
+/* -------------Cart Page----------------- */
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.cart-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itembox {
+  background-color: var(--faded-white);
+  display: flex;
+  width: auto;
+  border-radius: 10px;
+  align-items: center;
+  padding: 5%;
+  width: 680px;
+}
+
+.gameimg {
+  width: 35%;
+  padding: 3%;
+}
+
+.itemtext {
+  padding: 2%;
+  width: 200px;
+  color: var(--white);
+  font-weight: thin;
+}
+
+.gametitel {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+  width: 200px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+
+h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.carttext {
+  margin: 20% 0 50% 15%;
+  color: var(--white);
+}
+
+.summary-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary-box {
+  width: 540px;
+  height: auto;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.priceinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: var(--white);
+}
+
+h3 {
+  text-align: center;
+  color: var(--white);
+}
+
+.summary-headline {
+  font-size: 25px;
+}
+
+.gotopayment {
+  border-radius: 20px;
+  width: 350;
+  height: 80;
+  font-size: 30;
+  background-color: var(--yellow);
+  font-weight: bold;
+}
+.gotopayment:hover {
+  color: var(--white);
+  background-color: var(--faded-white);
+}
+
+.buttonlink {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.choice {
+  display: flex;
+  max-width: 100%;
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+}
+
+.continueshopping {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.line {
+  width: 35%; /* Adjust the width as needed */
+  height: 1px; /* Adjust the thickness as needed */
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 872px) {
+  .itembox {
+    width: 350px;
+  }
+  .gametitel {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+    width: 200px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .summary-box {
+    width: 400px;
+    height: auto;
+  }
+  .gotopayment {
+    width: 200px;
+    font-size: 20;
+    height: 50px;
+}
+}
+
+/* -------------Payment----------------- */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.payment-info {
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.cardinformation {
+  width: 680px;
+  height: 400;
+  border: 1px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: var(--blue);
+}
+input[type="size1"] {
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--faded-white);
+}
+input[type="size2"] {
+  width: 540px;
+  height: 70px;
+  background-color: var(--faded-white);
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 100;
+}
+.summary {
+  width: 540px;
+  height: 450px;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buybutton {
+  width: 350px;
+  height: 70px;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15%;
+  cursor: pointer;
+}
+.priceinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: var(--white);
+}
+
+.summary-container {
+  text-align: center;
+  color: var(--white);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  column-gap: 2%;
+  margin: 0 0 0 -10%;
+}
+
+.paymentoptions {
+  width: auto;
+  margin-top: -200%;
+}
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.paypal {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  background-color: var(--faded-white);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1657px) {
+  .payment-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .cardinformation {
+    width: 290px;
+    height: 300;
+  }
+
+  input[type="size1"] {
+    width: 60px;
+    height: 40px;
+  }
+  input[type="size2"] {
+    width: 250px;
+    height: 40px;
+  }
+
+  input::placeholder {
+    color: var(--white);
+    font-size: 15px;
+  }
+  .summary {
+    width: 290;
+    height: 350px;
+    margin: 0 0 0 3%;
+  }
+  
+  .buybutton {
+    width: 200px;
+    height: 60px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5%;
+    cursor: pointer;
+  }
+  .card {
+    font-size: 10;
+  }
+  .paypal {
+    font-size: 10;
+  }
+}
+
+
+
+/* -------------Payment success----------------- */
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.checkoutsuccess{
+  display: flex;
+  flex-direction: column;
+  font-size: 37px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+
+
+.download{
+  width: 245px;
+  height: 55;
+  background-color: var(--blue-faded);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headtext{
+  border-bottom: 3px solid var(--yellow);
+  padding: 2% 20%;
+  font-size: 45px;
+}
+
+.info-p{
+  text-align: center;
+}
+.iconcheck{
+  padding: 2%;
+  margin: 5% 0;
+}
+
+
+@media screen and (max-width:1324px){
+  .checkoutsuccess{
+      font-size: 35px;
+  }
+  .headtext{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width:872px){
+  .checkoutsuccess{
+      font-size: 20px;
+  }
+  .iconcheck{
+      margin: 10% 0;
+  }
+  .headtext{
+      font-size: 25px;
+      padding: 2% 15%;
+  }
+  .info-p{
+      font-size: 20;
+  }
+  .download{
+      width: 200px;
+      height: 50;
+      font-size: 17px;
+  }
+}

@@ -1,0 +1,36 @@
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover {
+    color: var(--yellow);
+  }
+  
+  button:hover {
+    color: var(--yellow);
+  }
+  
+  summary:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+  
+  li:hover {
+    color: var(--yellow);
+  }
+  
+  .cart:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+  
+  .profile:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+
+  .get-the-app:hover {
+    background-color: var(--black);
+    color: var(--yellow);
+  }

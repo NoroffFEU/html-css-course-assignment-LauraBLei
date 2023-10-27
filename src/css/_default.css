@@ -1,0 +1,25 @@
+:root {
+    --blue: #1b203d;
+    --white: #ffffff;
+    --black: #000000;
+    --yellow: #fbbd1f;
+    --faded-white: rgba(255, 255, 255, 0.5);
+    --faded-white20: rgba(255, 255, 255, 0.2);
+    --grey: #8d8f9e;
+    --blue-faded: #0e101f;
+  }
+  
+  body {
+    background-color: var(--blue);
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1{
+    margin-left: 25px;
+    margin-bottom: 50px;
+    padding: 0;
+    color: var(--white);
+    white-space: nowrap;
+  }

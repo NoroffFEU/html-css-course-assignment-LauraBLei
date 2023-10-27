@@ -1,0 +1,109 @@
+  
+  @media screen and (max-width: 1324px) {
+    .feature-contactus,
+    .feature-safe
+    {
+      display: none;
+    }
+
+    .menu-box {
+     background-color: transparent;
+      border: none;
+    }
+    .menu a {
+      font-size: 30;
+      color: var(--white);
+    }
+    
+    .right-navbar {
+      font-size: 8;
+    }
+    .logo {
+      width: 100px;
+      height: 60px;
+      top: 2%;
+      left: 2%;
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+    }
+    input[type="checkbox"]:checked~input[type="search"] { 
+        width: 545px;
+        
+    }
+    .section1 {
+        background: url("Pictures/challenger-stands-front-spooky-castle-illustration.jpg")
+          no-repeat center center fixed;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        justify-content: center;
+        display: flex;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 1;
+      }
+      .jointext {
+        z-index: 2;
+        color: var(--white);
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .Joinp{
+        font-size: 35px;
+      }
+}
+  
+  @media screen and (max-width: 872px) {
+    .feature-trustpilot, .navcontactus, .navaboutus{
+      display: none;
+    }
+
+    .feature-contactus{
+        display: flex;
+    }
+    .right-navbar {
+      font-size: 5;
+      gap: 5%;
+      right: 5%;
+    }
+    
+    .menu a {
+        font-size: 15;
+        color: var(--white);
+      }
+
+    .logo {
+      width: 80px;
+      height: 44px;
+      top: 2%;
+      left: 3%;
+      
+    }
+
+    input[type="checkbox"]:checked~input[type="search"] { 
+        width: 125px;
+        font-size: 20px;
+    }
+
+    .search-button{
+        font-size: 15px;
+    }
+    .icon{
+        font-size: 4px;
+    }
+    .footer-maintext{
+        font-size: 10px;
+    }
+    .Joinp{
+        font-size: 32px;
+      }
+      .footer-container {
+        column-gap: 50px;
+      }
+  }
+
+
